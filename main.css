@@ -1,0 +1,194 @@
+/*
+a:-webkit-any-link {
+    color: black;
+    cursor: yellow;
+    text-decoration: none;
+} */
+body {
+	text-align:center;
+	height:auto;
+	width:100%;
+	margin:0px; /* removes the small margin at the edge of the screen */
+	background-color:#E2C18B;
+	background-image:url("http://i.imgur.com/h0X3vD0.jpg");
+	color:#3D2E1B;
+	font-family:"Palatino" , "Arial";
+}
+
+h1 {
+	width:25%;
+	border:3px solid #6A012C;
+	margin-bottom:20px;
+	padding:5px;
+	margin:auto;
+	font-family:"Helvetica";
+	/*background-color:#292017;*/
+	color:#6A012C;
+	text-shadow:2px 2px #050305;
+}
+
+nav {
+	position:absolute;
+	width:100%;
+	height:100%;
+	margin:auto;
+	text-align:center;
+	background-color:#292017;
+	border-top:3px solid #6A012C;
+	border-bottom:3px solid #6A012C;
+	box-shadow:0px 2px 2px #050305;
+	background-image:url("http://i.imgur.com/Qs5W7KH.jpg");
+}
+nav > * { /* this targets everything inside the nav */
+	margin-top:15%;
+	font-family:"Courier";
+	background-color:#800020;
+	border:1px solid #800020;
+	color:#FFD600;
+	outline-color:#FFD600;
+	box-shadow:1px 1px #050305;
+}
+nav > h1 {
+	margin-bottom:5px;
+	box-shadow: none;
+	margin-left:10px;
+	float:left;
+	font-family:"Helvetica";
+	color:#6A012C;
+	background:none;
+	border:none;
+	float:left;
+	font-size:25px;
+}
+#search {
+	display:none;
+}
+nav a:link, nav  a:visited, nav  a:hover {
+	text-decoration:none;
+	color:#FFD600;
+}
+nav button, nav input {
+	height:40px;
+}
+nav button {
+	width:120px;
+}
+nav input {
+	width:250px;
+}
+#container, table {
+	position:absolute;
+	top:100px;
+	right:50px;
+	margin:auto;
+	width:90%;
+	height:auto;
+	display:none;
+}
+#table-one {
+	position:absolute;
+	top:40px;
+	right:40px;
+	height:978px;
+	margin:auto;
+	display:block;
+	padding-top:30px;
+}
+#table-two {
+	position:absolute;
+	top:800px;
+	right:40px;
+	/*margin-top:100px;*/
+	padding-top:10%;
+	height:978px;
+	margin:auto;
+	display:block;
+}
+tr {
+	height:244px;
+	width:100%;
+	margin:5px;
+}
+td { /* this is the element where each individual search result will apear */
+	border:3px solid #6A012C;
+	text-align:center;
+	width:20%;
+	height:20%;
+	margin:5px;
+	margin-top:0px;
+	margin-bottom:20px;
+	color:black;
+	text-decoration:none;
+	background-color:#F2DEBD;
+	opacity:0.8;
+	-webkit-transition:opacity 0.5s;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius:10px;
+}
+td  h2 {
+	margin-top:0px;
+	margin-left:5px;
+	margin-right:5px;
+	padding-top:5px;
+	padding-bottom:3px;
+	color:#6A012C;
+	font-family:"Helvetica";
+	border-bottom:2px solid #6A012C;
+}
+td p {
+	font-family:"Courier";
+	margin-top:1px;
+	padding-bottom:5px;
+}
+td a:link, td  a:visited, td  a:hover {
+	text-decoration:none;
+	color:black;
+}
+td:hover {
+	opacity:1.0;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* good shadow stuff look it up more */
+}
+footer {
+	display:none;
+	position:relative;
+	left:0px;
+	bottom:0px;
+	width:100%;
+	height:50px;
+}
+footer button, #show-more {
+	display:block;
+	margin:auto; /* if element does not align horizontally with margin autotry dispaly:block; */
+	font-family:"Courier";
+	background-color:#800020;
+	border:1px solid #800020;
+	color:#FFD600;
+	outline-color:#FFD600;
+	box-shadow:1px 1px black;
+	margin-top:20px;
+}
+
+
+
+
+
+
+
+/* this is the finnished nav bar when showing the results
+nav {
+	position:absolute;
+	width:100%;
+	height:52px;
+	margin:auto;
+	text-align:center;
+	border-bottom:3px solid #800020;
+	background-color:#A58B68;
+}
+nav > * { /* with the * i select ALL the children of nav 
+	margin-top:20px;
+	border:1px solid #800020;
+	background-color:#A58B68;
+	display:inline-block;
+	font-family:"Courier";
+}
+*/
